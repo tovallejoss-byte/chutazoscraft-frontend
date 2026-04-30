@@ -1,16 +1,25 @@
-# React + Vite
-#prueba
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🛒 Chutazoscraft 2.0 - Web Store
 
-Currently, two official plugins are available:
+## 📖 Descripción de la Aplicación
+La aplicación es una plataforma web e-commerce diseñada para el servidor de Minecraft **Chutazoscraft 2.0**. Su objetivo principal es permitir a los jugadores adquirir ítems virtuales (armas, cultivos, rangos) y gestionar servicios financieros dentro del juego (como solicitar préstamos bancarios) utilizando una interfaz web externa intuitiva y moderna.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🎭 Actores del Sistema y sus Funciones
 
-## React Compiler
+### 1. Usuario (Jugador)
+Es el cliente final. Sus interacciones principales son:
+* Acceder al sistema mediante un inicio de sesión.
+* Visualizar el catálogo completo de productos disponibles.
+* Comprar ítems con dinero real para que se entreguen en su cuenta de Minecraft.
+* Utilizar el sistema financiero para solicitar préstamos (cumpliendo la regla de negocio del 50% de garantía).
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 2. Administrador
+Es el encargado de la tienda y la economía. Sus permisos incluyen:
+* Gestionar el inventario (agregar o quitar productos del catálogo JSON).
+* Visualizar las estadísticas de ventas del servidor.
+* Aprobar o rechazar transacciones financieras de alto riesgo.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 3. El Sistema Mismo
+Actúa como el motor lógico automatizado. Se encarga de:
+* Calcular automáticamente las garantías necesarias para los préstamos.
+* Consumir y validar los datos desde el archivo `productos.json` para renderizarlos en el Front-end.
+* Simular la conexión para la entrega automática de los ítems en el juego tras una compra exitosa.
