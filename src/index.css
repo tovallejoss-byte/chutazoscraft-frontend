@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #0d0d0d;
+  color: #f2f2f2;
+  min-height: 100vh;
+}
+
+/* --- Barra de Navegación --- */
+.navbar {
+  background-color: #141414;
+  border-bottom: 2px solid #2a2a2a;
+  padding: 1.2rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  color: #ffaa00;
+  font-weight: 900;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav-link {
+  color: #888;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ffffff;
+}
+
+.btn-nav {
+  background-color: transparent;
+  color: #ffaa00;
+  border: 2px solid #ffaa00;
+  padding: 8px 20px;
+  text-decoration: none;
+  font-weight: 900;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.btn-nav:hover {
+  background-color: #ffaa00;
+  color: #0d0d0d;
+}
+
+/* --- Contenedor Principal --- */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+/* --- Estilos de la Tarjeta de Login (Estética Boxy) --- */
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+}
+
+.boxy-card {
+  background-color: #171717;
+  border: 2px solid #333;
+  padding: 3rem;
+  width: 100%;
+  max-width: 450px;
+  /* La sombra dura le da ese estilo estructurado */
+  box-shadow: 12px 12px 0px #ffaa00; 
+}
+
+.boxy-card h2 {
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: -1.5px;
+  margin-bottom: 0.5rem;
+}
+
+.boxy-card p {
+  color: #888;
+  margin-bottom: 2rem;
+}
+
+.input-field {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #0d0d0d;
+  border: 2px solid #333;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  transition: border-color 0.3s ease;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #ffaa00;
+}
+
+.btn-primary {
+  width: 100%;
+  padding: 15px;
+  background-color: #ffaa00;
+  color: #0d0d0d;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: transform 0.1s ease;
+}
+
+.btn-primary:active {
+  transform: translateY(4px);
+  box-shadow: none;
+}

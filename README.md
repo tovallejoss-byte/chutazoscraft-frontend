@@ -1,12 +1,16 @@
-# Chutazoscraft 2.0 - Web Store (Front-end)
+# React + Vite
 
-Este repositorio contiene la interfaz de usuario para la tienda oficial del servidor de Minecraft Chutazoscraft 2.0. La plataforma permite a los jugadores iniciar sesión, explorar un catálogo de ítems y rangos, y realizar compras utilizando dinero real.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## 👥 Integrantes del Equipo
-* **Jefe de Proyecto:** Tomás Vallejos
+Currently, two official plugins are available:
 
-## 🚀 Tecnologías Utilizadas
-* **Framework:** React 18 con Vite
-* **Estilos:** Tailwind CSS / Bootstrap 5.3
-* **Peticiones HTTP:** Axios
-* **Control de Versiones:** Git y GitHub
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+
+## React Compiler
+
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
