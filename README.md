@@ -4,8 +4,6 @@ Este repositorio contiene la interfaz de usuario para la tienda oficial del serv
 
 ## 👥 Integrantes del Equipo
 * **Jefe de Proyecto:** Tomás Vallejos
-* **Desarrollador:** Lukas Rojas
-* **Desarrollador:** Matías Hernández
 
 ## 🚀 Tecnologías Utilizadas
 * **Framework:** React 18 con Vite
